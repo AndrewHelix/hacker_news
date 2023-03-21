@@ -1,16 +1,17 @@
-import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Layout from '../Layout';
-import './App.css';
+
+// Components
+import MainPage from 'src/components/MainPage/MainPage';
+import NewsPage from 'src/components/OneNewsPage/OneNewsPage';
+import Layout from 'src/components/Layout';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Layout />}>
-					<Route index element={<>main page</>} />
-					<Route path=":newsAlias" element={<>any news</>} />
-					<Route path="*" element={<>Page 404</>} />
+					<Route index element={<MainPage />} />
+					<Route path=":newsId" element={<NewsPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

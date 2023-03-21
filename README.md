@@ -1,6 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> #### How to install and run
+>
+> - 1. Clone repository by using command **git clone git@github.com:AndrewHelix/hacker_news.git**.
+> - 2. Install packages. Write command **yarn install** in terminal.
+> - 3. Run command **yarn start**
 
 ## Available Scripts
 
