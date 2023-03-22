@@ -40,6 +40,7 @@ export const newsReducer = (
 				error: action.payload,
 			};
 		default:
-			return exhaustiveCheck(action);
+			exhaustiveCheck(action);
+			return state;
 	}
 };
